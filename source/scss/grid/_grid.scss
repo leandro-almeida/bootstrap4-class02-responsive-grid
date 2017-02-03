@@ -1,0 +1,33 @@
+// base column code
+.col {
+    float: left;
+    padding-left: $gutter;
+}
+
+// removing the padding for the first child
+.col:first-child {
+    padding-left: 0;
+}
+
+// generating the code for the N-columns
+// colum width formula: colnumber / number of columns * 100 (%)
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: ($i / $columns * 100%);
+    }
+}
+
+@media (max-width: 480px) {
+    .col {
+        padding-left: 0;
+    }
+    // concatenate all .col-1, .col-2, etc. into single string
+    $columnsClassList: ();
+    @for $i from 1 through $columns {
+        $columnsClassList: join($columnsClassList, unquote(".col-#{$i}"), comma);
+    }
+    // output the style for all columns
+    #{$columnsClassList} {
+        width: 100%;
+    }
+}

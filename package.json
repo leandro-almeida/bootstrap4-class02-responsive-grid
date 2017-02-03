@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap4-class03-responsive-grid",
+  "version": "1.0.0",
+  "author": "leandroalmeida <almeida85@gmail.com>",
+  "description": "Creating a simple 12-column responsive grid with SASS/SCSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandro-almeida/bootstrap4-class03-responsive-grid.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandro-almeida/bootstrap4-class03-responsive-grid/issues"
+  },
+  "homepage": "https://github.com/leandro-almeida/bootstrap4-class03-responsive-grid#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
